@@ -1,34 +1,35 @@
 
-var form = document.querySelector('form');
-var add = document.querySelector('.add');
-var subtract = document.querySelector('.subtract');
-var result = document.querySelector('.result');
-var multiply = document.querySelector('.multiply');
-var divide = document.querySelector('.divide');
-form.addEventListener('submit', function (e) {
+const form = document.querySelector('form');
+const add = document.querySelector('.add');
+const subtract = document.querySelector('.subtract');
+const result = document.querySelector('.result');
+const multiply = document.querySelector('.multiply');
+const divide = document.querySelector('.divide');
+
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-    var input1 = parseInt(document.querySelector('.input1').value);
-    var input2 = parseInt(document.querySelector('.input2').value);
-    
-    
+
+    let input1  = parseInt(document.querySelector('.input1').value);
+    let input2  = parseInt(document.querySelector('.input2').value);
+
+
     // Adding
-    add.addEventListener('click', function () {
+    add.addEventListener(() => {
         result.innerHTML = input1 + input2;
     });
 
-    // subtract
-    subtract.addEventListener('click', function () {
+    // Subtract
+    subtract.addEventListener(() => {
         result.innerHTML = input1 - input2;
     });
 
-    // multiply
-    multiply.addEventListener('click', function () {
+    // Multiply
+    multiply.addEventListener(() => {
         result.innerHTML = input1 * input2;
     });
 
     // Divide
-    divide.addEventListener('click', function () {
+    divide.addEventListener(() => {
         result.innerHTML = input1 / input2;
     });
-    
-});
+})
