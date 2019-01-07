@@ -14,22 +14,22 @@ form.addEventListener('submit', (e) => {
 
 
     // Adding
-    add.addEventListener(() => {
+    add.addEventListener('click', () => {
         result.innerHTML = input1 + input2;
     });
 
     // Subtract
-    subtract.addEventListener(() => {
+    subtract.addEventListener('click', () => {
         result.innerHTML = input1 - input2;
     });
 
     // Multiply
-    multiply.addEventListener(() => {
+    multiply.addEventListener('click', () => {
         result.innerHTML = input1 * input2;
     });
 
     // Divide
-    divide.addEventListener(() => {
+    divide.addEventListener('click', () => {
         result.innerHTML = input1 / input2;
     });
-})
+});
